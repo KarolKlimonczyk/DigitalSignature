@@ -1,0 +1,3 @@
+keystore:
+  path: ${JVMFY_KEYSTORE}
+  password: ${JVMFY_KEYSTORE_PASSWORD}
