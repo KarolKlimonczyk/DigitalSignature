@@ -26,6 +26,13 @@ repositories {
 
 dependencies {
     implementation('org.springframework.boot:spring-boot-starter-web')
+    implementation(group: 'commons-io', name: 'commons-io', version: '2.6')
+
+//  PDF SIGNATURE DEPENDENCIES
+    implementation(group: 'org.bouncycastle', name: 'bcmail-jdk15on', version: bouncycastle_version) //Secure/Multipurpose Internet Mail Extensions (S/MIME)
+    implementation(group: 'org.bouncycastle', name: 'bcprov-jdk15on', version: bouncycastle_version) //Java Cryptography Extension (JCE)
+    implementation(group: 'org.apache.pdfbox', name: 'pdfbox', version: pdfbox_version)
+
     compileOnly('org.projectlombok:lombok')
     testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
